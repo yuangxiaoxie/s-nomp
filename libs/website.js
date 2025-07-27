@@ -98,6 +98,7 @@ module.exports = function(logger){
 
     // if an html file was changed reload it
     /* requires node-watch 0.5.0 or newer */
+    /*
     watch(['./website', './website/pages'], function(evt, filename){
         var basename;
         // support older versions of node-watch automatically
@@ -111,7 +112,7 @@ module.exports = function(logger){
             logger.special(logSystem, 'Server', 'Reloaded file ' + basename);
         }
     });
-
+    */
     portalStats.getGlobalStats(function(){
         readPageFiles(Object.keys(pageFiles));
     });
